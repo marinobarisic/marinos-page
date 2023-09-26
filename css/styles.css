@@ -1,0 +1,25 @@
+
+body {
+  background-color: #EEE3CB;
+}
+
+hr {
+border-style: none;
+border-top-style: double;
+border-color: #967E76;
+border-width: 5px;
+width: 95%;
+}
+
+h3 {
+  color: #25316D;
+}
+
+a:hover {
+  background-color: red;
+  color: white;
+}
+
+.circleprofile {
+  border-radius: 20%
+}
