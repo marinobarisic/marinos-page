@@ -11,11 +11,24 @@
     <script>
         function bmiCalculator(weight, height) {
             var bmi= weight / Math.pow(height, 2);
-            return Math.round(bmi);
+            return bmi;
         } 
         var weight = prompt('Enter your weight (kg)');
         var height = prompt('Enter your height (m)');
         var bmiIndex = bmiCalculator(weight, height)
         alert("Your bmi is " + bmiIndex);
+        if ( bmiIndex < 18.5 ) {
+          alert('Your BMI category is - Underweight')
+        };
+        if ( bmiIndex >= 18.5 && bmiIndex <= 24.9) {
+          alert('Your BMI category is - Healthy Weight')
+        };
+        if ( bmiIndex >= 25 && bmiIndex <= 29.9) {
+          alert('Your BMI category is - Overweight')
+        };
+        if ( bmiIndex > 30) {
+          alert('Your BMI category is - Obesity')
+        };
+
     </script>
   </body>

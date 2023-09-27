@@ -1,6 +1,8 @@
 
 body {
-  background-color: #EEE3CB;
+  background-image: url('split.jpg');
+  background-size: cover;
+  /* background-color: #EEE3CB; */
 }
 
 hr {
