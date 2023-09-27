@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <a href="index.html" >Back to Home</a>
+    <script>
+        function bmiCalculator(weight, height) {
+            var bmi= weight / Math.pow(height, 2);
+            return Math.round(bmi);
+        } 
+        var weight = prompt('Enter your weight (kg)');
+        var height = prompt('Enter your height (m)');
+        var bmiIndex = bmiCalculator(weight, height)
+        alert("Your bmi is " + bmiIndex);
+    </script>
+  </body>
