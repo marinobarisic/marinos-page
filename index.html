@@ -2,13 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Main page</title>
+    <title>Test page</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
+  <header class="header">
+    <h1>Test</h1>
+    <p>test</p>
+  </header>
 
- <body>
-  <br> <a href="cv.html">My CV</a> </br>
-  <br> <a href="contact.html">Contact Me</a> </br>
-  <br> <a href="bmi.html">Calculate your BMI</a> </br>
+ <body class="homepage-image">
+  <div class="login-dialog">
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <script src="login.js"></script>
+  </div>
  </body>

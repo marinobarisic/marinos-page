@@ -1,11 +1,47 @@
 
-body {
-  background-image: url('split.jpg');
-  background-size: cover;
-  /* background-color: #EEE3CB; */
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
 }
 
-hr {
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
+
+.homepage-image {
+  background-image: url('images/split.png');
+}
+
+.menu {
+  display: flex;
+  flex-direction: row; /* Display links horizontally */
+  gap: 20px; /* Add spacing between links (adjust as needed) */
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  position: absolute;
+}
+
+/* Style the iframe to be 50% wide */
+.iframe-container iframe {
+  width: 78%;
+  height: 50%; /* Full height of the container */
+  border: none;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-color: #5a7882;
+}
+
+.hr {
 border-style: none;
 border-top-style: double;
 border-color: #967E76;
@@ -13,7 +49,7 @@ border-width: 5px;
 width: 95%;
 }
 
-h3 {
+.h3 {
   color: #25316D;
 }
 
@@ -24,4 +60,12 @@ a:hover {
 
 .circleprofile {
   border-radius: 20%
+}
+
+.login-dialog {
+  text-align: center;
+}
+
+.logout {
+  align-items: right;
 }

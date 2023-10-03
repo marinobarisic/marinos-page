@@ -16,18 +16,17 @@
         var weight = prompt('Enter your weight (kg)');
         var height = prompt('Enter your height (m)');
         var bmiIndex = bmiCalculator(weight, height)
-        alert("Your bmi is " + bmiIndex);
         if ( bmiIndex < 18.5 ) {
-          alert('Your BMI category is - Underweight')
+          alert('Your BMI is ' + bmiIndex.toFixed(3) + ' and your category is - Underweight')
         };
         if ( bmiIndex >= 18.5 && bmiIndex <= 24.9) {
-          alert('Your BMI category is - Healthy Weight')
+          alert('Your BMI is ' + bmiIndex.toFixed(3) + ' and your category is - Healthy Weight')
         };
         if ( bmiIndex >= 25 && bmiIndex <= 29.9) {
-          alert('Your BMI category is - Overweight')
+          alert('Your BMI is ' + bmiIndex.toFixed(3) + ' and your category is - Overweight')
         };
         if ( bmiIndex > 30) {
-          alert('Your BMI category is - Obesity')
+          alert('Your BMI is ' + bmiIndex.toFixed(3) + ' and your category is - Obesity')
         };
 
     </script>

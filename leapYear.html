@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <td> <a href="index.html">Back to Home</a></td>
+    <script>
+    var year = prompt("Enter year");
+    function isLeap(year) { 
+        if (year % 4 === 0) {
+            if (year % 100 === 0) {
+                if  (year % 400 === 0) {
+                    return  ("leap year")
+                    }   else {
+                    return ("not leap year")
+                    }  
+            } else {
+            return("leap year.")     
+            }
+        }  else {
+        return("not leap year.")
+        }
+    }
+    alert("Year you entered is " + isLeap(year))
+    </script>
+    </body>
