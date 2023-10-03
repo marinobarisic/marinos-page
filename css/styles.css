@@ -66,6 +66,7 @@ a:hover {
   text-align: center;
 }
 
-.logout {
-  align-items: right;
+.header .logout {
+  margin-left: auto;
+  padding: 0px 5px;
 }
